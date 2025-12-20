@@ -1,8 +1,16 @@
 {
-  "name": "template-nestjs",
+  "name": "tarter-nextjs",
   "version": "0.1.0",
   "type": "module",
   "private": true,
+  "description": "A stubbornly opinionated starter template for NextJS projects.",
+  "author": "Clover You <hi@clovu.me>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/clovu/starter-nextjs.git"
+  },
+  "homepage": "https://github.com/clovu/starter-nextjs#readme",
   "scripts": {
     "dev": "next dev",
     "build": "pnpm type-check && next build",
@@ -15,6 +23,7 @@
   "engines": {
     "node": ">=23.6.0"
   },
+  
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

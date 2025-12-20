@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "fix": "eslint --fix",
-    "type-check": "tsgo --noEmit"
+    "type-check": "tsgo --noEmit",
+    "prepare": "simple-git-hooks"
   },
   "engines": {
     "node": ">=23.6.0"

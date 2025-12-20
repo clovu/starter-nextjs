@@ -23,7 +23,6 @@
   "engines": {
     "node": ">=23.6.0"
   },
-  
   "dependencies": {
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -42,6 +41,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@typescript/native-preview": "7.0.0-dev.20251220.1",
+    "@vercel/config": "^0.0.24",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9.39.2",
     "eslint-config-next": "16.1.0",

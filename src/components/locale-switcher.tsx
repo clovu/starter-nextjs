@@ -2,14 +2,15 @@
 import { useRef } from 'react'
 import { Button } from './ui/button'
 import { setUserLocale } from '@/services/locale'
+import { useLocale } from 'next-intl'
 
 interface Props {
   locales: string[]
 }
 
 export function LocaleSwitcher({ locales }: Readonly<Props>) {
-
-  const index = useRef(0)
+  const locale = useLocale()
+  const index = useRef(locales.findIndex(it => it === locale) ?? 0)
 
   function switcher() {
     const locale = locales[index.current++] 
@@ -18,7 +19,6 @@ export function LocaleSwitcher({ locales }: Readonly<Props>) {
       ]
     
     setUserLocale(locale)
-    console.log(locale)
   }
 
   return <Button variant="outline" onClick={switcher}>

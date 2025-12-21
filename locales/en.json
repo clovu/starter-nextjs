@@ -8,7 +8,7 @@
     "toggle_langs": "Change languages"
   },
   "intro": {
-    "desc": "Opinionated Vite Starter Template",
+    "desc": "Opinionated NextJS Starter Template",
     "dynamic-route": "Demo of dynamic route",
     "hi": "Hi, {name}!",
     "aka": "Also known as",

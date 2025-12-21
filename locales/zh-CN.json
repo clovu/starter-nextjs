@@ -8,7 +8,7 @@
     "toggle_langs": "切换语言"
     },
   "intro": {
-    "desc": "固执己见的 Vite 项目模板",
+    "desc": "固执己见的 NextJS 项目模板",
     "dynamic-route": "动态路由演示",
     "hi": "你好，{name}",
     "aka": "也叫",

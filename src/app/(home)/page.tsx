@@ -18,7 +18,7 @@ export default function Home() {
       <p>
         <a rel="noreferrer" href="https://github.com/clovu/tarter-nextjs" target="_blank"> Starter </a>
       </p>
-      <p>{t('intro.desc')}</p>
+      <p><em className="text-sm opacity-75">{t('intro.desc')}</em></p>
       <div className="py-4"></div>
       
       <Form />

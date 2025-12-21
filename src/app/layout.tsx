@@ -4,6 +4,7 @@ import { ThemeProvider } from 'next-themes'
 
 import './globals.css'
 
+import { Wrap } from './wrap'
 import { resolvePackage } from '@/services/package'
 
 const { author, description } = resolvePackage()
@@ -24,7 +25,9 @@ export default async function RootLayout({
         <ThemeProvider enableSystem attribute="class">
           <NextIntlClientProvider>
             <main className="px-4 py-10 text-center text-gray-700 dark:text-gray-200">
-              {children}
+              <Wrap>
+                {children}
+              </Wrap>
             </main>
           </NextIntlClientProvider>
         </ThemeProvider>

@@ -21,12 +21,16 @@ export function Form() {
     <Input
       autoComplete="false"
       placeholder={t('intro.whats-your-name')}
-      className="px-4 py-2 w-[250px]"
+      className="px-4 py-2 w-full text-center"
       onChange={e => userName.current = e.target.value}
       maxLength={40}
     />
     <div>
-      <Button onClick={goto} className="m-3 text-sm">{t('button.go')}</Button>
+      <Button
+        variant="outline"
+        onClick={goto}
+        className="mt-3 text-sm w-37.5"
+      >{t('button.go')}</Button>
     </div>
   </>
 }

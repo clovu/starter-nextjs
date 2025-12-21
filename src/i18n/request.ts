@@ -1,5 +1,4 @@
 import { getRequestConfig } from 'next-intl/server'
-import { cookies } from 'next/headers'
 
 import { DEFAULT_LOCALE, getMessageLoader } from './config'
 import { getUserLocale } from '@/services/locale'

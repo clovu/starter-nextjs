@@ -3,6 +3,9 @@ import { LocaleSwitcher } from './locale-switcher'
 import { ThemeSwitcher } from './theme-switcher'
 import { buttonVariants } from './ui/button'
 import { availableLocales } from '@/i18n'
+import { resolvePackage } from '@/services/package'
+
+const { homepage } = resolvePackage()
 
 export function Toolbar() {
   return <>
@@ -12,7 +15,7 @@ export function Toolbar() {
       <LocaleSwitcher locales={availableLocales} />
 
       <Link
-        href="https://github.com/clovu/starter-nextjs.git"
+        href={homepage}
         target="_blank" 
         className={buttonVariants({ variant: 'outline' })}
       >

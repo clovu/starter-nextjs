@@ -4,6 +4,7 @@ interface Package {
   description: string
   author: string
   homepage: string
+  version: string
 }
 
 export function resolvePackage() {

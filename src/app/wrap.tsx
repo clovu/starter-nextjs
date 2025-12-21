@@ -7,7 +7,7 @@ export function Wrap({ children }: PropsWithChildren) {
     <Card
       className="w-95 m-auto"
     >
-      <CardContent>
+      <CardContent className="relative">
         {children}
       </CardContent>
     </Card>

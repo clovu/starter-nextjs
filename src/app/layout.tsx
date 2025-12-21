@@ -9,7 +9,7 @@ import { resolvePackage } from '@/services/package'
 
 const { author, description } = resolvePackage()
 export const metadata: Metadata = {
-  title: 'Starter NextJS',
+  title: 'Gratia',
   description,
   authors: [{ name: author, url: 'https://clovu.me' }],
 }

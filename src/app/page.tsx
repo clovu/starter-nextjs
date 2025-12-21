@@ -2,9 +2,10 @@ import { useTranslations } from 'next-intl'
 
 import { Button, buttonVariants } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
-import { LocaleSwitcher } from '@/components/LocaleSwitcher'
+import { LocaleSwitcher } from '@/components/locale-switcher'
 import { availableLocales } from '@/i18n'
 import Link from 'next/link'
+import { ThemeSwitcher } from '@/components/theme-switcher'
 
 export default function Home() {
   const t = useTranslations()
@@ -21,13 +22,15 @@ export default function Home() {
         <Button className="m-3 text-sm">{t('button.go')}</Button>
       </div>
 
-      <nav className="mt-6 justify-center text-xl gap-4">
+      <nav className="mt-6 justify-center text-xl gap-4 flex">
+        <ThemeSwitcher />
+        
         <LocaleSwitcher locales={availableLocales} />
 
         <Link
           href="https://github.com/clovu/starter-nextjs.git"
           target="_blank" 
-          className={buttonVariants({ variant: 'default' })}
+          className={buttonVariants({ variant: 'outline' })}
         >
           <span className="icon-[carbon--logo-github] size-5"></span>
         </Link>

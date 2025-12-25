@@ -5,6 +5,7 @@ interface Package {
   author: string
   homepage: string
   version: string
+  bugs?: string
 }
 
 export function resolvePackage() {

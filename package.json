@@ -11,6 +11,7 @@
     "url": "https://github.com/clovu/starter-nextjs.git"
   },
   "homepage": "https://github.com/clovu/starter-nextjs",
+  "bugs": "https://github.com/clovu/starter-nextjs/issues",
   "scripts": {
     "dev": "next dev",
     "build": "pnpm type-check && next build",

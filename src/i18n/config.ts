@@ -1,6 +1,7 @@
 import { join, basename } from 'node:path'
 import process from 'node:process'
 import { readFile } from 'node:fs/promises'
+import { match as matchIntl } from '@formatjs/intl-localematcher'
 
 import { globSync } from 'glob'
 import { Locale } from 'next-intl'
@@ -34,8 +35,12 @@ const locales = Object.fromEntries(
 ) as Record<Locale, () => Promise<Record<string, string> | undefined>>
 
 export const availableLocales = Object.keys(locales)
-  
+
 export const DEFAULT_LOCALE = 'en'
+
+export function matchLocal(requestedLocales: readonly string[]) {
+  return matchIntl(requestedLocales, availableLocales, DEFAULT_LOCALE)
+}
 
 export function getMessageLoader(locale: string) {
   return locales[locale] ?? locales[DEFAULT_LOCALE]

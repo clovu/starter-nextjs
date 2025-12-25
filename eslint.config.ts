@@ -3,7 +3,6 @@ import nextVitals from 'eslint-config-next/core-web-vitals'
 import nextTs from 'eslint-config-next/typescript'
 import reactCompiler from 'eslint-plugin-react-compiler'
 
-
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
@@ -39,6 +38,10 @@ const eslintConfig = defineConfig([
         named: 'never',
         asyncArrow: 'always',
       }],
+
+      'no-trailing-spaces': ['warn'],
+      'no-multiple-empty-lines': ['warn', { max: 1, maxBOF: 0, maxEOF: 0 }],
+      'eol-last': ['warn', 'always'],
 
       '@typescript-eslint/consistent-type-definitions': 'error',
       '@typescript-eslint/no-empty-object-type': 'off',

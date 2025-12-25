@@ -11,12 +11,12 @@ export function Toolbar() {
   return <>
     <nav className="mt-6 justify-center text-xl gap-4 flex">
       <ThemeSwitcher />
-        
+
       <LocaleSwitcher locales={availableLocales} />
 
       <Link
         href={homepage}
-        target="_blank" 
+        target="_blank"
         className={buttonVariants({ variant: 'outline' })}
       >
         <span className="icon-[carbon--logo-github] size-5"></span>

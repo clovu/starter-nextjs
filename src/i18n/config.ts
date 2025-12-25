@@ -5,7 +5,6 @@ import { match as matchIntl } from '@formatjs/intl-localematcher'
 
 import { globSync } from 'glob'
 import { Locale } from 'next-intl'
- 
 
 const localesPath = join(process.cwd(), 'locales')
 
@@ -15,8 +14,7 @@ class LocaleLoader {
   private locales = new Map<Locale, Record<string, string>>()
 
   public loadLocaleCache = async (path: string) => {
-    if (this.locales.has(path))
-      return this.locales.get(path)
+    if (this.locales.has(path)) return this.locales.get(path)
 
     const raw = await readFile(path, 'utf-8')
     const result = JSON.parse(raw) as Record<string, string>

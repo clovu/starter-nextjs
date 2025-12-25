@@ -12,8 +12,7 @@ export function Form() {
   const router = useRouter()
 
   function goto() {
-    if (!userName.current.trim())
-      return
+    if (!userName.current.trim()) return
     router.push(`/hi/${encodeURI(userName.current)}`)
   }
 

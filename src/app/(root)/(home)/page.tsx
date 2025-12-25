@@ -25,7 +25,7 @@ export default function Home() {
       </p>
       <p><em className="text-sm opacity-75">{t('intro.desc')}</em></p>
       <div className="py-4"></div>
-      
+
       <Form />
 
       <Toolbar />

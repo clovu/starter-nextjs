@@ -16,19 +16,18 @@ export function LocaleSwitcher({ locales }: Readonly<Props>) {
 
   function switcher() {
     startTransition(() => {
-      const locale = locales[index.current++] 
+      const locale = locales[index.current++]
       ?? locales[
         index.current = 0
       ]
-    
+
       setUserLocale(locale)
     })
   }
 
-  if (isPending)
-    return <Button variant="outline">
-      <Spinner />
-    </Button>
+  if (isPending) {return <Button variant="outline">
+    <Spinner />
+  </Button>}
 
   return <Button variant="outline" onClick={switcher}>
     <span className="icon-[carbon--language] size-5"/>

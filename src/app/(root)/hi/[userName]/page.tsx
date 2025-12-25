@@ -26,5 +26,3 @@ export default async function SayHi({ params }: Props) {
     <Toolbar />
   </>
 }
-
-

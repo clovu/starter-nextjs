@@ -20,7 +20,7 @@ export async function getUserLocale() {
   const userLocale = store.get(COOKIE_NAME)
 
   if (userLocale)
-  {return userLocale.value}
+    return userLocale.value
 
   const headerStore = await headers()
   const languages = parseAcceptLanguage(headerStore.get('accept-language') ?? '')
@@ -33,6 +33,6 @@ export async function setUserLocale(locale: Locale) {
   store.set(COOKIE_NAME, locale)
 }
 
-if (true){
+if (true) {
   console.log()
 }

@@ -91,4 +91,9 @@
     "tsconfig.tsbuildinfo": true
   },
   "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": [
+    "formatjs",
+    "iconify",
+    "tsgo"
+  ],
 }

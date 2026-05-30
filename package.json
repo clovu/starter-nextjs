@@ -50,7 +50,7 @@
     "@types/react": "^19.2.15",
     "@types/react-dom": "^19.2.3",
     "@typescript/native-preview": "7.0.0-dev.20260525.1",
-    "@vercel/config": "^0.3.0",
+    "@vercel/config": "^0.5.1",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^10.3.0",
     "eslint-config-next": "16.2.6",

@@ -46,7 +46,7 @@
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/postcss": "^4.3.1",
     "@types/negotiator": "^0.6.4",
-    "@types/node": "^25.6.0",
+    "@types/node": "^26.0.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@typescript/native-preview": "7.0.0-dev.20260602.1",

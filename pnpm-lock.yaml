@@ -79,8 +79,8 @@ importers:
         specifier: 7.0.0-dev.20260602.1
         version: 7.0.0-dev.20260602.1
       '@vercel/config':
-        specifier: ^0.5.2
-        version: 0.5.2
+        specifier: ^0.5.5
+        version: 0.5.5
       babel-plugin-react-compiler:
         specifier: 1.0.0
         version: 1.0.0
@@ -1988,12 +1988,12 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@vercel/config@0.5.2':
-    resolution: {integrity: sha512-Mt5dj3Eo+U7Ta47q/5ExfukJxPvr3UWy11vEM52mihpTGLnWKIfw4LfN1altSXwXofuHgUPJs6TmVh6cXk4EFw==}
+  '@vercel/config@0.5.5':
+    resolution: {integrity: sha512-U0QX7p08vgk8D47HI74wYyRuDJ2IYHbFQyfVdwO81Xchjp5CsV58/xhkV4EAXXj4NuLuELBwdPDa6oOdCYvEhg==}
     hasBin: true
 
-  '@vercel/routing-utils@6.3.0':
-    resolution: {integrity: sha512-D26TMI5B1eu0X+1hfNDJCAdVQ0nNq0OmVALB025t96k1YUFXIXnosCVZBIBX/FlHVmuIKdxKg/c65O7vnFOH7g==}
+  '@vercel/routing-utils@6.4.0':
+    resolution: {integrity: sha512-SnL/449ftNIDt1cB/oDqFmdZWywckNA6Q/S3WuzzsxBdE9DxmNn498qMKRtgx0W6EW3Mm/wVmg7aNJrfElMBTA==}
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -6266,13 +6266,13 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vercel/config@0.5.2':
+  '@vercel/config@0.5.5':
     dependencies:
-      '@vercel/routing-utils': 6.3.0
+      '@vercel/routing-utils': 6.4.0
       pretty-cache-header: 1.0.0
       zod: 3.25.76
 
-  '@vercel/routing-utils@6.3.0':
+  '@vercel/routing-utils@6.4.0':
     dependencies:
       path-to-regexp: 6.1.0
       path-to-regexp-updated: path-to-regexp@6.3.0

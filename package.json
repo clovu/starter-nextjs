@@ -53,7 +53,7 @@
     "@vercel/config": "^0.5.5",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^10.6.0",
-    "eslint-config-next": "16.2.9",
+    "eslint-config-next": "16.2.12",
     "eslint-plugin-react-compiler": "19.1.0-rc.2",
     "lint-staged": "^17.0.8",
     "postcss-load-config": "^6.0.1",
